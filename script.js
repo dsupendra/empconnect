@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function updateUIAfterLogin() {
-        const googleSearchUrl = 'http://127.0.0.1:5501/dashb.html';
+        const googleSearchUrl = 'https://dsupendra.github.io/empconnect/dashb.html';
         window.open(googleSearchUrl, '_blank');
     }
 });
