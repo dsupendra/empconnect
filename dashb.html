@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="dashboard.css" media="screen" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Company Dashboard</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">D<span style="color: blue">S</span><span style="color: red;">U</span></div>
+            <div class="user-profile">
+                <img src="Chef1.jpeg" alt="User Avatar">
+                <span id="WUName" class="WUName-txt"> </span> 
+                <span><a href="index.html">Logout</a></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="dashboard row">
+        <div class="col-lg-4 fix-box text-body">
+            <h2>Dashboard Overview</h2>
+            <!-- Include relevant widgets and statistics here -->
+            <div class="widget">
+                <h3>Total Tasks</h3>
+                <p>143</p>
+            </div>
+            <div class="widget">
+                <h3>Tasks Pending</h3>
+                <p>Information Technology</p>
+            </div>
+            <div class="widget">
+                <h3>Upcoming Events</h3>
+                <p>Ramesh Marriage</p>
+            </div>
+        </div>
+        <div class=" col-lg-7 fix-box message-box">
+            <div class="sidebar">
+                <h2>Channels</h2>
+                <ul id="channel-list">
+                    <!-- Channel list will be dynamically updated -->
+                </ul>
+            </div>
+    
+            <div class="chat-container">
+                <div class="chat-header" id="channel-name">
+
+                </div>
+                <div class="chat-messages text-body" id="chat-messages">
+                    <!-- Chat messages will be dynamically updated -->
+                </div>
+                <div class="chat-input">
+                    <textarea id="message-input" placeholder="Type your message..."></textarea>
+                    <button id="send-button">Send</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Sections -->
+    <section class="document-repository">
+        <h2>Document Repository</h2>
+        <!-- Include document repository content here -->
+        <ul>
+            <li><a href="#">User Mannual</a></li>
+            <li><a href="#">Employees</a></li>
+            <li><a href="#">Check More details</a></li>
+        </ul>
+    </section>
+
+    <section class="employee-directory">
+        <h2>Employee Directory</h2>
+        <!-- Include employee directory content here -->
+        <ul>
+            <li><a href="#">Upendra Dasari</a></li>
+            <li><a href="#">Vismaya</a></li>
+            <li><a href="#">Deepika</a></li>
+            <li><a href="#">Vinod</a></li>
+            <li><a href="#">Ramesha R</a></li>
+            <li><a href="#">Upendra Y</a></li>
+            <li><a href="#">Check All Employees...</a></li>
+        </ul>
+    </section>
+    <!-- End of New Sections -->
+
+    <footer>
+        <p>&copy; 2024 dsupendra. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.3/socket.io.js"></script>
+    <script src="message.js"></script>
+</body>
+
+</html>
