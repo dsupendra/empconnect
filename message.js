@@ -73,7 +73,7 @@
     //   window.close(); // Close the popup
     } else {
       alert('Invalid credentials. Returning to Google search.');
-      window.location.href = 'https://www.google.com'; // Redirect to Google
+      window.location.href = 'https://dsupendra.github.io/empconnect/'; // Redirect to Google
     }
   }
 
